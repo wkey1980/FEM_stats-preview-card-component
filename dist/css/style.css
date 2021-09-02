@@ -1,2 +1,65 @@
+* {
+  outline: 1px solid red;
+}
 
-/*# sourceMappingURL=style.css.map */
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+.wrapper__inner {
+  width: 1440px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #090b1a;
+  color: white;
+}
+
+.card {
+  width: 1100px;
+  height: 450px;
+  display: flex;
+  background-color: #1b1938;
+}
+.card__info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex: 50%;
+  padding: 40px;
+}
+.card__title {
+  color: white;
+}
+.card__title--colour {
+  color: #aa5cdb;
+}
+.card__description {
+  color: rgba(255, 255, 255, 0.75);
+}
+.card__image {
+  flex: 50%;
+  background-image: linear-gradient(rgba(170, 92, 219, 0.8), rgba(170, 92, 219, 0.8)), url("/src/images/image-header-desktop.jpg");
+}
+.card__stats {
+  display: flex;
+}
